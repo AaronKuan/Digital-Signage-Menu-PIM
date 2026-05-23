@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Signage Menu PIM</title>
+    <meta
+      name="description"
+      content="Firebase Hosting starter site for Digital Signage Menu PIM."
+    >
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Firebase dev environment</p>
+        <h1 id="page-title">Digital Signage Menu PIM</h1>
+        <p class="lead">
+          這是一個已連接 Firebase Hosting 的起始網站，可作為菜單看板與商品資訊管理系統的開發基礎。
+        </p>
+        <div class="actions">
+          <a class="button" href="#status">查看部署狀態</a>
+          <a class="button button-secondary" href="/api/status">測試 Functions API</a>
+        </div>
+      </section>
+
+      <section id="status" class="card" aria-labelledby="status-title">
+        <h2 id="status-title">專案狀態</h2>
+        <dl class="status-grid">
+          <div>
+            <dt>Firebase project</dt>
+            <dd>digital-signage-menu-pim</dd>
+          </div>
+          <div>
+            <dt>Environment</dt>
+            <dd>dev</dd>
+          </div>
+          <div>
+            <dt>Hosting</dt>
+            <dd>Ready</dd>
+          </div>
+          <div>
+            <dt>Functions</dt>
+            <dd id="api-status">Checking...</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

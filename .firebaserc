@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "digital-signage-menu-pim",
+    "dev": "digital-signage-menu-pim"
+  }
+}
