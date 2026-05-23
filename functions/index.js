@@ -5,9 +5,15 @@ export const api = onRequest(
     region: "asia-east1",
   },
   (request, response) => {
-    const path = request.path.replace(/^\/api\/?/, "");
+    const segments = request.path.split("/").filter(Boolean);
 
-    if (path === "status" || path === "") {
+    if (segments[0] === "api") {
+      segments.shift();
+    }
+
+    const route = segments.join("/");
+
+    if (route === "status" || route === "") {
       response.status(200).json({
         ok: true,
         projectId: "digital-signage-menu-pim",
