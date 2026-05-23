@@ -3,6 +3,7 @@ node_modules/
 firebase-debug.log
 firebase-debug.*.log
 *.local
+.secrets/
 .env
 .env.*
 !.env.example
