@@ -1,0 +1,44 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    match /products/{document=**} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    match /pricingConfigs/{document=**} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    match /storeLiveStatuses/{document=**} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    match /branches/{document=**} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    match /devices/{document=**} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    match /tags/{document=**} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    match /menuSettings/{document=**} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+  }
+}

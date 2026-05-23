@@ -1,0 +1,41 @@
+:root {
+  color: #153023;
+  font-family:
+    Inter, "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  background: #f4efe3;
+}
+
+body {
+  margin: 0;
+}
+
+.landing {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  gap: 18px;
+  padding: 40px;
+  text-align: center;
+}
+
+.landing h1 {
+  margin: 0;
+  color: #0f4b2f;
+  font-size: clamp(40px, 8vw, 88px);
+}
+
+.landing p {
+  margin: 0;
+  font-size: 22px;
+}
+
+.landing a {
+  display: inline-flex;
+  margin: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  background: #0f6d3e;
+}

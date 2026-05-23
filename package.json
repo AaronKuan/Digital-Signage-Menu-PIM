@@ -1,0 +1,37 @@
+{
+  "name": "digital-signage-menu-pim",
+  "version": "1.0.0",
+  "description": "Firebase-based Digital Signage Menu PIM for TEA TOP style menus.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "functions:install": "npm install --prefix functions",
+    "functions:lint": "node --check functions/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronKuan/Digital-Signage-Menu-PIM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AaronKuan/Digital-Signage-Menu-PIM/issues"
+  },
+  "homepage": "https://github.com/AaronKuan/Digital-Signage-Menu-PIM#readme",
+  "dependencies": {
+    "firebase": "^12.13.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14"
+  }
+}
